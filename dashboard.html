@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<style>
+    marquee{
+        font-size:30px;
+        font-weight: 600;
+        color: black;
+       
+    }
+</style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyWebsite</div>
+            <ul class="nav-links">
+                <li><a href="#">log-in</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="box box-20">
+                <div class="section_choose">
+                    <ul>
+                        <li onclick="showResult('Dashboard')">
+                            <i class="bi bi-trello">
+                                Dashboard
+                            </i> 
+                        </li>
+                        <li onclick="showResult('Attendance')">
+                            <i class="bi bi-person-check-fill">
+                                 Attendance
+                                </i>
+                        </li>
+                        <li onclick="showResult('Employes')">
+                            <i class="bi bi-arrow-clockwise">
+                                Employes
+                            </i> 
+                        </li>
+                        <li onclick="showResult('Holiday')">
+                            <i class="bi bi-calendar-week-fill">
+                                  Holiday
+                            </i> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box box-80" id="resultBox">
+              <marquee behavior="" direction=""> 😊 Hello Admin This Is Yours Systems</marquee>
+              
+
+            </div>
+
+            
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="js/script.js">
+        
+    </script>   
+</body>
+
+</html>
